@@ -1,17 +1,19 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-void print_alphabet(void);
-void print_alphabet_x10(void);
-int_islower(int C);
-int_isalpha(int C);
-int_print_sign(int n);
-int_abs(int);
-int print_last_digit(int);
-void jack_bauer(void);
-void times_table(void);
-int add(int, int);
-void print_to_98(int n);
-int -putchar(char c)
+/** main - prints putchar
+ * Return: Always 0
+ */
+int main(void)
+{
+	_putchar("_");
+	_putchar("p");
+	_putchar("u");
+	_putchar("t");
+	_putchar("c");
+	_putchar("h");
+	_putchar("a");
+	_putchar("r");
+	_putchar("\n");
 
-#endif
+	return (0);
+}
