@@ -3,12 +3,13 @@
 
 /**
  * File - main.h
- * Author: _putchar
+ * Author: _alphabet
  * Desdcription: putchar function in. C - Functions, nested loops
  *          used 0x02. C - Functions, nested loops
+ * Return: always 0 (success)
  */
 int _putchar(char c);
-int 1-alphabet(int c);
+int _alphabet(int c);
 
 
 
