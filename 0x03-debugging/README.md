@@ -1,1 +1,1 @@
-Based on the main.c file above, create a file named 0-main.c
+Copy this main file. Comment out (don’t delete it!)
