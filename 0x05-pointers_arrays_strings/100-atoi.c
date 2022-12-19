@@ -2,12 +2,11 @@
 
 /**
  * _atoi - Entry point
- * @s: input
- * Return: Always 0 (Success)
+ * @s: string
+ * Return: integer
  */
+
 int _atoi(char *s)
 {
-
-
 	return (*s);
 }
