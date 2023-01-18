@@ -1,59 +1,51 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "3-calc.h"
-
 /**
- * op_add - Adds two numbers
- * @a: First Number
- * @b: Second Number
- *
- * Return: Sum of a and b
+ * op_add - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
-
 /**
- * op_sub - Substracts two numbers
- * @a: First Number
- * @b: Second Number
- *
- * Return: Substraction of a and b
+ * op_sub - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
-
 /**
- * op_mul - Multiplies two numbers
- * @a: First Number
- * @b: Second Number
- *
- * Return: Multiplication of a and b
+ * op_mul - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
-
 /**
- * op_div - Divides two numbers
- * @a: First Number
- * @b: Second Number
- *
- * Return: Division of a and b
+ * op_div - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 int op_div(int a, int b)
 {
 	return (a / b);
 }
-
 /**
- * op_mod - Modulus of two numbers
- * @a: First Number
- * @b: Second Number
- *
- * Return: Modulus of a and b
+ * op_mod - 5 functions
+ * @a: input one
+ * @b: input two
+ * Return: 0
  */
 int op_mod(int a, int b)
 {
