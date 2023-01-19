@@ -11,6 +11,7 @@ void print_all(const char * const format, ...);
  * struct format - Data type of a format.
  * @op: Format.
  * @f: Function.
+ * @f: Function.
  *
  */
 
