@@ -1,1 +1,1 @@
-Write a C program that prints exactly 
+Size is not grandeur, and territory does not make a nation 
