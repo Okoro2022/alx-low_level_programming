@@ -1,38 +1,54 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * alloc_grid - function to return a pointer of a 2d array
- *
- * @width: width of the grid
- * @height: height of the grid
- *
- * Return: NULL for failure or 0/ neg height/ width
- */
-int **alloc_grid(int width, int height)
-{
-	int **matrix;
-	int a, b;
 
-	if (width < 1)
+/**
+ * **alloc_grid - function that returns a pointer to a 2 dimensional array of
+ *                integers.
+ *
+ * @width: This is the columns of the array
+ * @height: This is the rows of the array
+ *
+ * Return: Returns a pointer to a 2 dimensional array of integers.
+ *         The function should return NULL on failure
+ *         If width or height is 0 or negative, return NULL
+ */
+
+int **alloc_grid(int width, int height) /* 6 columns and 4 rows*/
+{
+	int j, i;
+	int **arr;
+
+	if (width < 1 || height < 1)
 		return (NULL);
-	if (height < 1)
-		return (NULL);
-	matrix = malloc(height * sizeof(int *));
-	if (matrix == 0)
-		return (NULL);
-	for (a = 0; a < height; a++)
+
+	arr = (int **)malloc(sizeof(int *) * height);
+	if (arr == NULL)
 	{
-		matrix[a] = malloc(width * sizeof(int));
-		if (matrix[a] == 0)
+		free(arr);
+		return (NULL);
+	}
+
+	for (i = 0; i < height; i++)
+	{
+		arr[i] = malloc(sizeof(int) * width);
+		if (arr[i] == NULL)
 		{
-			for (b = 0; b < a; b++)
-				free(matrix[b]);
-			free(matrix);
+			for (i = 0; i < height; i++)
+			{
+				free(arr[i]);
+			}
+			free(arr);
 			return (NULL);
 		}
-		for (b = 0; b < width; b++)
-			matrix[a][b] = 0;
 	}
-	return (matrix);
+
+
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+		{
+			arr[i][j] = 0;
+		}
+
+	return (arr);
 }
