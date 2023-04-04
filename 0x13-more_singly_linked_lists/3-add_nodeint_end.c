@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  *add_nodeint_end - adds a node to the end of a linked list
